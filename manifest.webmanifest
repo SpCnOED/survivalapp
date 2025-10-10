@@ -1,0 +1,9 @@
+{
+  "name": "Community Services Finder",
+  "short_name": "Services",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "icons": []
+}
