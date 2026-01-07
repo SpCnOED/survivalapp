@@ -67,7 +67,7 @@
     <div class="max-w-7xl mx-auto p-4 md:p-6 lg:p-8">
         <!-- Banner Header -->
         <div class="bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl shadow-lg p-6 mb-6 text-center">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">BETA VERSION - Vernon Survival Guide</h1>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">BETA Vernon Survival Guide BETA</h1>
             <p class="text-lg md:text-xl text-blue-50">Winter 2025</p>
         </div>
 
@@ -105,7 +105,7 @@
 
         <!-- Image Resource Buttons -->
         <div class="mb-6 no-print grid grid-cols-2 gap-3">
-            <button onclick="toggleImageModal('noShelter')" class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+            <button onclick="toggleImageModal('noShelter')" class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
                 <span class="text-xl">🚫</span>
                 <span class="text-sm">No Shelter Parks</span>
             </button>
@@ -244,8 +244,9 @@
         const PROVIDER_PASSWORD = "Spcno2026";
         let isProviderAuthenticated = false;
         
-        // ⚠️ LINE 246 ⚠️ JSON DATA HERE - SERIOUSLY, PUT THE JSON DATA HERE ⚠️
-        let servicesData = [  {
+        // ⚠️ JSON DATA HERE ⚠️ SERIOUSLY, PUT THE JSON DATA HERE ⚠️
+        let servicesData = [
+  {
     "id": null,
     "organization_name": null,
     "org_main_phone": null,
@@ -332,8 +333,8 @@
     "program_name": "Peer Support",
     "location_name": null,
     "address": "Vernon, BC",
-    "x": "-119.2716666",
-    "y": "50.2655556",
+    "x": null,
+    "y": null,
     "program_phone": "250.545.4933",
     "phone_24h": null,
     "phone_helpline": null,
@@ -3241,7 +3242,8 @@
     "is_seasonal": null,
     "season_notes": null,
     "volunteer_url": null
-  }];
+  }
+];
         
         const categories = [
             { id: 'housing', name: 'Housing & Shelter', icon: '🏠', color: 'blue', keywords: ['housing', 'shelter', 'homeless', 'rent', 'emergency shelter', 'transitional'] },
