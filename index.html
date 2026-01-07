@@ -244,7 +244,7 @@
         const PROVIDER_PASSWORD = "Spcno2026";
         let isProviderAuthenticated = false;
         
-        // ⚠️ JSON DATA HERE - ⚠️ SERIOUSLY, PUT THE JSON DATA HERE ⚠️
+        // ⚠️ LINE 246 ⚠️ JSON DATA HERE - SERIOUSLY, PUT THE JSON DATA HERE ⚠️
         let servicesData = [  {
     "id": null,
     "organization_name": null,
@@ -3654,7 +3654,8 @@
             const modal = document.getElementById('shareQRModal');
             modal.classList.toggle('active');
             if (modal.classList.contains('active')) {
-                const url = window.location.href;
+                // Fixed URL for QR code - replace with your actual GitHub Pages URL
+                const url = 'https://spcnoed.github.io/survivalapp/';
                 document.getElementById('shareLink').textContent = url;
                 const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(url)}`;
                 document.getElementById('qrCodeContainer').innerHTML = `<img src="${qrUrl}" alt="QR Code" class="rounded-lg shadow-md">`;
